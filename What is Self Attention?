@@ -1,0 +1,73 @@
+What is Self Attention?
+In order to know self attention, we need to know what is Attention and why we need Attention in Seq2Seq model. 
+
+Thanks for that. What is Seq2Seq model?
+  A Seq2Seq model is a very popular model used in the area of deep learning. It accepts input in the form of a Sequence and outputs 
+  a desired response.
+  
+mmmm.......Can you give me an example of input sequence please. or exactly What is input in the form of a Sequence?
+
+  ok...Imagine Seq2Seq input to a Train.   
+  What does a train have. A train will have an engine and there are carraiges connected to each other and a final carraige is connected
+  to the engine. Here the carraiges are connected to each other in sequence. Similar to this train, the input data which needs to be 
+  processed appears in sequence and this is the input to the Seq2Seq model. 
+  
+Oh..OK....Any more examples?
+  OK...one more...Imagine Ants in your house which moves in a line. One Ant behind the other. There are going in a sequence. 
+They are moving in a Sequence. Hope you got the mental picture.  
+  
+In NLP world, a sentence is a sequence. 
+
+Example "Sam went to the beach" is a sequence where each word token is part of the sequence. This is fed to the Seq2Seq model. 
+
+Now got to know what is a sequenced input. Thank you. 
+
+What are the components of a Seq2Seq model?
+  Simple. A Seq2Seq model has an encoder and a decoder.
+  
+What is an Encoder?
+  An encoder is a block/entity which transforms an input sequence to an encoded representation. The main objective of an encoder is 
+to take the input sequence and transform it to another data form capturing most/all the information of the input sequence. 
+
+What is an Decoder?
+  An decoder is a block/entity which transforms the encoded representation to the desired output.
+  
+Imagine you speak English and your friend speaks French. You both only knew English and French respectively. Now how do you 
+communicate. You need to find some one who know both French and English. Imagine You found a box/machine which transforms every 
+english word you speak to a corresponding number. Imagine you say "I am Tired" to the box. The box converts it to 
+
+I am Tired - > 1100 1110 1011 
+
+Your friend found another box which transforms every number to a french word. He gets those words and gives it to his box. His box
+gives the output as below
+
+1100 1110 1011 - > Je Suis Fatigue
+
+Here 1100 1110 1011 is the representation. The box which you have is the encoder and the box which your friend have is the decoder
+
+oh my god..Is all these happening inside a seq2seq model?
+
+Yes. 
+
+So, where is attention coming here?
+
+In order to understand that you need to know about RNNs. We will discuss that later. But sticking with the box example, your box
+(a.k.a encoder) needs outputs a representation. We call this representation as Context Vector which is a fixed length vector
+
+What is a fixed length vector?
+ A fixed lenght vector is a vector whose length does not not change as the input length changes. 
+ 
+ Imagine the sentence I am Tired -. This corresponds to 110011101011
+ 
+ Imagine another sentence "I am too Tired and not getting enough sleep". This corresponds to 110000001011
+ 
+ The length of the vector never changes irrespective of the input length. This is the fixed length vector. 
+ 
+ 
+  
+  
+  
+
+  
+  
+  
